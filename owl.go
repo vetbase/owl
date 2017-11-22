@@ -24,6 +24,7 @@ type Query struct {
 }
 
 // NewDatabase creates a new database struct
+// func NewDatabase(driver string, db *sql.DB) *Database {
 func NewDatabase(driver string, db *sql.DB) *Database {
 	return &Database{
 		Driver:     driver,

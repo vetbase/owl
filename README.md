@@ -1,5 +1,5 @@
 # Owl
-Database persistence made consistent.
+Interact with a data persistent layer in a consistent manor.
 
 ```
 type User struct {
@@ -26,5 +26,10 @@ err := db.Execute()
 // delete
 db := owl.Connect("postgres", "db=database,username=username,password=password")
 db.Table("users").Delete().Where("email = ?", "user@domain.com")
+err := db.Execute()
+
+// insert
+db := owl.Connect("postgres", "db=database,username=username,password=password")
+db.Table("users").Insert("name", "email").Values("Jane Doe", "jdoe@domain.com").Value("Susan Doe", "sdoe@domain.com")
 err := db.Execute()
 ```
