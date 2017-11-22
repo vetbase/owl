@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vetbase/owl.svg?branch=master)](https://travis-ci.org/vetbase/owl)
+
 # Owl
 Interact with a data persistent layer in a consistent manor.
 
