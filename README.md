@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/vetbase/owl.svg?branch=master)](https://travis-ci.org/vetbase/owl)
+[![codecov](https://codecov.io/gh/vetbase/owl/branch/master/graph/badge.svg)](https://codecov.io/gh/vetbase/owl)
 
 # Owl
 Interact with a data persistent layer in a consistent manor.
