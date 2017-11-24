@@ -46,6 +46,11 @@ func Connect(driver string, dns string) *Database {
 	return NewDatabase(driver, db)
 }
 
+// Close disconnects the current database connection
+func (db *Database) Close() {
+	db.Connection.Close()
+}
+
 // Execute query on database
 func (db *Database) Execute() {
 	sql := db.Query.SQL()

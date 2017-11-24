@@ -13,7 +13,7 @@ func (db *Database) Select(cols ...string) *Database {
 func columns(cols []string) string {
 	c := "*"
 	if len(cols) > 0 {
-		c = strings.Join(cols, ",")
+		c = " " + strings.Join(cols, ",") + " "
 	}
 
 	return c

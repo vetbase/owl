@@ -6,7 +6,6 @@ import (
 
 	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/assert"
-	// "github.com/stretchr/testify/mock"
 )
 
 func TestConnect(t *testing.T) {
